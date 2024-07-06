@@ -6,7 +6,7 @@ resource "aws_vpc" "terraform_vpc_1" {
     Owner = var.nv_owner
   }
   lifecycle {
-    ignore_changes = [ tags ]
+    ignore_changes = [tags]
   }
 }
 

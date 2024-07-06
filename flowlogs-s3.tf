@@ -7,7 +7,7 @@ resource "aws_s3_bucket" "terraform_flowlogs_bucket1" {
   }
   depends_on = [aws_s3_bucket.terraform_flowlogs_bucket2]
   lifecycle {
-    prevent_destroy = false
+    prevent_destroy       = false
     create_before_destroy = true
   }
 }
