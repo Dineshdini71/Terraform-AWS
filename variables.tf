@@ -15,3 +15,6 @@ variable "ohio_vpc1" {}
 variable "ohio_owner" {}
 variable "ohio_vpc2_cidr" {}
 variable "ohio_vpc2" {}
+variable "imagename" {}
+variable "instance_type" {}
+variable "key_name" {}
