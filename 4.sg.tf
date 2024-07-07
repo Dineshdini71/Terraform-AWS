@@ -10,6 +10,20 @@ resource "aws_security_group" "allow_all" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+  ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "TCP"
+    cidr_blocks = ["117.241.199.69/32"]
+  }
+
+  ingress {
+    from_port   = 3389
+    to_port     = 3389
+    protocol    = "RDP"
+    cidr_blocks = ["117.241.199.69/32"]
+  }
+
   egress {
     from_port   = 0
     to_port     = 0
@@ -17,6 +31,6 @@ resource "aws_security_group" "allow_all" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
-    Name  = "${var.nv_vpc1}_SG"
+    Name = "${var.nv_vpc1}_SG"
   }
 }
