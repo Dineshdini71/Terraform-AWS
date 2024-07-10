@@ -1,0 +1,21 @@
+# Variable declarining
+variable "nv_vpc1_cidr" {}
+variable "nv_vpc1" {}
+variable "nv_owner" {}
+variable "nv_vpc2_cidr" {}
+variable "nv_vpc2" {}
+variable "public_subnet1_cidr" {}
+variable "public_subnet2_cidr" {}
+variable "public_subnet3_cidr" {}
+variable "second_public_subnet1_cidr" {}
+variable "second_public_subnet2_cidr" {}
+variable "second_public_subnet3_cidr" {}
+variable "ohio_vpc1_cidr" {}
+variable "ohio_vpc1" {}
+variable "ohio_owner" {}
+variable "ohio_vpc2_cidr" {}
+variable "ohio_vpc2" {}
+variable "imagename" {}
+variable "instance_type" {}
+variable "key_name" {}
+#END
