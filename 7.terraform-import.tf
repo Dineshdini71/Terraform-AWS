@@ -1,5 +1,3 @@
-# resource "aws_vpc" "YourVPC" {
+# resource "aws_vpc" "Yourvpc" {
 
 # }
-# # YourVPC-(pink)
-# # vpc-073f94eac057521a4
